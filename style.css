@@ -1,0 +1,82 @@
+body {
+    background: url('./media/background.jpg') no-repeat fixed;
+    background-attachment: fixed;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    display: inline-block;
+    text-align: left;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 50px;
+    backdrop-filter: blur(5px);
+    width: 35%;
+    height: 70%;
+}
+
+#aboutme, #project, #experience, #contact, #swskill {
+    font-size: 35px;
+}
+
+html {
+    font-family: "Fira Code", monospace;
+}
+
+a {
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#main {
+    width: 65%;
+    background-color: rgb(54, 54, 54);
+    padding: 30px;
+    visibility: hidden;
+    height: 74%;
+    margin: 5px;
+    color:white;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+a::after {
+    content: " ➡";
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:hover::after {
+    opacity: 1;
+}
+
+#header {
+    font-size: 35px;
+}
+
+#content {
+    font-size: 20px;
+}
+
+#content a {
+    background-color: black;
+}
+
+#content img {
+    width: 100px;
+    height: auto;
+}
